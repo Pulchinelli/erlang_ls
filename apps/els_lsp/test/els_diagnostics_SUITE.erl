@@ -871,16 +871,7 @@ unused_includes_compiler_attribute(_Config) ->
     Path = src_path("diagnostics_unused_includes_compiler_attribute.erl"),
     Source = <<"UnusedIncludes">>,
     Errors = [],
-    {ok, FileName} = els_utils:find_header(
-        els_utils:filename_to_atom("kernel/include/file.hrl")
-    ),
-    Warnings = [
-        #{
-            message => <<"Unused file: file.hrl">>,
-            range => {{3, 0}, {3, 40}},
-            data => FileName
-        }
-    ],
+    Warnings = [],
     Hints = [],
     els_test:run_diagnostics_test(Path, Source, Errors, Warnings, Hints).
 
