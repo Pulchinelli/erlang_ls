@@ -1,0 +1,47 @@
+{
+  "name": "erlang-ls",
+  "displayName": "Erlang Language Server",
+  "description": "Erlang Language Server for Visual Studio Code",
+  "version": "0.0.1",
+  "publisher": "PSRTech",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pulchinelli/erlang-ls"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "erlang",
+        "aliases": ["Erlang", "erlang"],
+        "extensions": [".erl"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "erlang",
+        "scopeName": "source.erlang",
+        "path": "./syntaxes/erlang.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "@types/vscode": "^1.50.0",
+    "@vscode/test-electron": "^1.4.0"
+  }
+}

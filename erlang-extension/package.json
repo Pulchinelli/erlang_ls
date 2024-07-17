@@ -1,0 +1,48 @@
+{
+  "name": "erlang-extension",
+  "displayName": "Erlangao Cuiuda",
+  "description": "Erlang Extension to VS Code Ubuntu",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [ 
+    "aaron-bond.better-comments", 
+    "adrianwilczynski.add-reference", 
+    "adrianwilczynski.asp-net-core-switcher", 
+    "adrianwilczynski.libman", 
+    "adrianwilczynski.namespace", 
+    "adrianwilczynski.terminal-commands", 
+    "adrianwilczynski.user-secrets", 
+    "bringout.vscode-ipaddress", 
+    "christian-kohler.path-intellisense", 
+    "codezombiech.gitignore", 
+    "compulim.vscode-ipaddress", 
+    "doggy8088.netcore-extension-pack", 
+    "doggy8088.netcore-snippets", 
+    "dracula-theme.theme-dracula", 
+    "editorconfig.editorconfig", 
+    "formulahendry.dotnet", 
+    "formulahendry.dotnet-test-explorer", 
+    "jchannon.csharpextensions", 
+    "jmrog.vscode-nuget-package-manager", 
+    "k--kato.docomment", 
+    "kreativ-software.csharpextensions", 
+    "medo64.highlight-ip", 
+    "ms-ceintl.vscode-language-pack-pt-br", 
+    "ms-dotnettools.csharp", 
+    "ms-python.python", 
+    "ms-python.vscode-pylance", 
+    "ms-toolsai.jupyter", 
+    "ms-toolsai.jupyter-keymap", 
+    "ms-toolsai.jupyter-renderers", 
+    "pflannery.vscode-versionlens", 
+    "quicktype.quicktype", 
+    "tintoy.msbuild-project-tools", 
+    "wayou.vscode-todo-highlight", 
+    "zxh404.vscode-proto3"
+  ]
+}
